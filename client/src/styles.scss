@@ -1,0 +1,24 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.part-one-container {
+  margin-bottom: 24px;
+  text-align: left;
+
+  span {
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .passed {
+    color: forestgreen;
+    text-transform: uppercase;
+  }
+
+  .failed {
+    text-transform: uppercase;
+    color: red;
+  }
+}
