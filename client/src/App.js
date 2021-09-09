@@ -7,20 +7,23 @@ export default function App() {
   // Part 1: Implement reverse in helper.js
   const userAnswers = stringTuples.map(([key]) => reverse(key));
 
-  React.useEffect(() => {
-    fetch("http://localhost:5000/test", {
-      method: "POST", // *GET, POST, PUT, DELETE, etc.
-      mode: "cors", // no-cors, *cors, same-origin
-      cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-      credentials: "same-origin", // include, *same-origin, omit
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ username: "test", password: "othertest" }),
-    })
+  /**
+   * 
+   React.useEffect(() => {
+     fetch("/test", {
+       method: "POST", // *GET, POST, PUT, DELETE, etc.
+       mode: "cors", // no-cors, *cors, same-origin
+       cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+       credentials: "same-origin", // include, *same-origin, omit
+       headers: {
+         "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ username: "test", password: "othertest" }),
+      })
       .then((res) => res.json())
       .then((data) => console.log("hi", data));
-  }, []);
+    }, []);
+    */
 
   return (
     <div className="App">

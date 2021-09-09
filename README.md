@@ -1,5 +1,10 @@
 # Demo Test
 
+## Requirements
+
+- LTS version of node.
+- NPM
+
 ## Getting started
 
 Run `npm install` from project root.
